@@ -11,6 +11,8 @@ body {
 
 .title {
     color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .poster {
@@ -166,4 +168,53 @@ body {
     border: none;
     padding: 0.25rem 0.5rem;
     color: white;
+}
+
+.love-icon {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    stroke: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 4px auto;
+    cursor: pointer;
+}
+
+.love-icon:hover {
+    color: rgb(201, 23, 23);
+}
+
+.love-icon-check {
+    color: rgb(201, 23, 23);
+}
+
+.love-icon-check:hover {
+    color: white;
+}
+
+.wishlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.wishlist a {
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #e02618;
+}
+
+.wishlist a:hover {
+    background-color: #e02518a9;
 }

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { ModalContext } from "../contexts/ModalContext";
+import { AppContext } from "../contexts/AppContext";
 import { Movie } from "../ts/type";
 
 const MovieCard: React.FC<Movie> = (props) => {
-  const { setMovie } = useContext(ModalContext);
+  const { setMovie } = useContext(AppContext);
   return (
     <div className="card-container">
       <div className="glow"></div>

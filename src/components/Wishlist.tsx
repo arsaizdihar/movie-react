@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../contexts/AppContext";
 import MovieCard from "./MovieCard";
 
-const Home = () => {
+const Wishlist = () => {
   const { movies } = useContext(AppContext);
-
   return (
     <>
       <div className="container">
-        <h1 className="title">Most Popular Movie List</h1>
+        <h1 className="title">Wishlist</h1>
         <div className="wishlist">
-          <Link to="/movie-react/wishlist">Wishlist</Link>
+          <Link to="/movie-react">back</Link>
         </div>
         <div id="movies">
-          {movies.map((movie) => (
-            <MovieCard {...movie} key={movie.id} />
-          ))}
+          {movies.map(
+            (movie) => movie.wishlist && <MovieCard {...movie} key={movie.id} />
+          )}
         </div>
       </div>
     </>
   );
 };
 
-export default Home;
+export default Wishlist;
